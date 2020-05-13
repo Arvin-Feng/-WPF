@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="_11._2._1数据外衣DataTemplate.CarListItemView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_11._2._1数据外衣DataTemplate"
+             mc:Ignorable="d">
+    <Grid Margin="2">
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="imageLogo" Grid.RowSpan="3" Width="64" Height="64"></Image>
+            <StackPanel Margin="5,10">
+                <TextBlock x:Name="txtName" FontSize="16" FontWeight="Bold"></TextBlock>
+                <TextBlock x:Name="txtYear" FontSize="14"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

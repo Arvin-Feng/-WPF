@@ -1,0 +1,32 @@
+﻿<Window x:Class="_3._2._1使用Attribute给对象赋值.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3._2._1使用Attribute给对象赋值"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!--LinearGradientBrush说明：
+    填充的方向是从StartPoint开始到EndPoint的连线， 默认是左上角(0,0) 到右下角为(1.1)，此默认值可以省略。--> 
+
+    <StackPanel x:Name="pnl1">
+        <!--1. 属性Attribute初始化随性属性（Property）-->
+        <!--<Rectangle x:Name="rect" Width="300" Height="200" Fill="Yellow"></Rectangle>-->
+        
+        <!--2. 后台代码设置颜色-->
+        
+        <!--3. 使用属性元素初始化对象属性-->
+        <Rectangle x:Name="rect" Width="300" Height="200" >
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="Blue" Offset="0"></GradientStop>
+                    <GradientStop Color="Red" Offset="0.5"></GradientStop>
+                    <GradientStop Color="Green" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        
+        <Button x:Name="btn" Width="120" Height="30" Margin="8" Content="改变颜色" Click="btn_Click"></Button>
+    </StackPanel>
+</Window>

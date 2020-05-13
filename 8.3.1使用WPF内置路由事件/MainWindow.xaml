@@ -1,0 +1,23 @@
+﻿<Window x:Class="_8._3._1使用WPF内置路由事件.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_8._3._1使用WPF内置路由事件"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="200">
+    <Grid x:Name="gridRoot" Background="Lime">
+        <Grid x:Name="gridA" Margin="10" Background="Blue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Canvas Grid.Column="0" Name="canvasLeft" Background="Red" Margin="10">
+                <Button x:Name="btnLeft" Content="Left" Width="40" Height="100" Margin="15"></Button>
+            </Canvas>
+            <Canvas Grid.Column="1" Name="canvasRight" Background="Yellow" Margin="10">
+                <Button x:Name="btnRight" Content="Right" Width="40" Height="100" Margin="15"></Button>
+            </Canvas>
+        </Grid>
+    </Grid>
+</Window>

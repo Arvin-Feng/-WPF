@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StudentList>
+    <Class>
+      <Student sXM="A1" sCH="016" sZYH="1300020" sBRBMMC="内二科"></Student>
+      <Student sXM="A2" sCH="016" sZYH="1300021" sBRBMMC="内二科"></Student>
+      <Student sXM="A3" sCH="016" sZYH="1300022" sBRBMMC="内二科"></Student>
+      <Student sXM="A4" sCH="016" sZYH="1300023" sBRBMMC="内二科"></Student>
+      <Student sXM="A5" sCH="016" sZYH="1300024" sBRBMMC="内二科"></Student>
+    </Class>
+    <Class>
+      <Student sXM="B6" sCH="016" sZYH="1300025" sBRBMMC="内二科"></Student>
+      <Student sXM="B2" sCH="016" sZYH="1300026" sBRBMMC="内二科"></Student>
+      <Student sXM="B3" sCH="016" sZYH="1300027" sBRBMMC="内二科"></Student>
+      <Student sXM="B4" sCH="016" sZYH="1300028" sBRBMMC="内二科"></Student>
+      <Student sXM="B5" sCH="016" sZYH="1300029" sBRBMMC="内二科"></Student>
+    </Class>
+</StudentList>

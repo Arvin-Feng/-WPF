@@ -1,0 +1,29 @@
+﻿<Window x:Class="_5._3._2HeaderedContentControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5._3._2HeaderedContentControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!--
+        基类：HeaderedContentControl
+            1. 它派生自ContentControll类。
+            2. 用于显示带标题的数据；
+            3. 除了用于显示内容的区域外， 还具有一个显示标题（Header）的区域。
+            4. 因为继承自ContentControll类， 所以无论是content还是header都只能容纳一个元素作为其内容。
+    
+        子类：GroupBox TabItem Expander等
+        以下代码如果再button控件内放置1个以上的内容就会报错， 因为只能是单一内容！
+    -->
+
+    <Grid>
+        <GroupBox Margin="10" BorderBrush="Gray">
+            <GroupBox.Header>
+                <Image Source=".\1.png" Width="32" Height="32"></Image>
+            </GroupBox.Header>
+            <TextBlock TextWrapping="WrapWithOverflow" Margin="10" Text="风萧萧兮易水寒、壮士一去兮不复还。"></TextBlock>
+        </GroupBox>
+    </Grid>
+</Window>

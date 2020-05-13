@@ -1,0 +1,27 @@
+﻿<Window x:Class="_5._3._3ItemControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5._3._3ItemControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--
+        ItemsControl
+            1. 用于显示列表化数据。
+            2. 每种ItemsControl都对应有自己的条目容器（Item Container）
+            3. 控件内容一定是个集合。
+    
+        子类：ItemsControl ListBox LisView ComboBox TreeView TabControl 等
+    -->
+    <Grid>
+        <ListBox Margin="5">
+            <CheckBox x:Name="chk1" Content="Tim"></CheckBox>
+            <CheckBox x:Name="chk2" Content="Tom"></CheckBox>
+            <CheckBox x:Name="chk3" Content="Brue"></CheckBox>
+            <Button x:Name="btn1" Content="Mess"></Button>
+            <Button x:Name="btn2" Content="Owen"></Button>
+            <Button x:Name="btn3" Content="Victor" Click="btn3_Click"></Button>
+        </ListBox>
+    </Grid>
+</Window>

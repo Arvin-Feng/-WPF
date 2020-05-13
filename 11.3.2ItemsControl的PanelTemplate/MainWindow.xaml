@@ -1,0 +1,23 @@
+﻿<Window x:Class="_11._3._2ItemsControl的PanelTemplate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_11._3._2ItemsControl的PanelTemplate"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <ListBox>
+            <!--使用模板改变lisbox项排列顺序-->
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"></StackPanel>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <TextBlock Text="A"></TextBlock>
+            <TextBlock Text="B"></TextBlock>
+            <TextBlock Text="C"></TextBlock>
+            <TextBlock Text="D"></TextBlock>
+        </ListBox>
+    </StackPanel>
+</Window>

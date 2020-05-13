@@ -1,0 +1,9 @@
+﻿<Application x:Class="_8._3._3路由事件在两棵树上的传递.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_8._3._3路由事件在两棵树上的传递"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

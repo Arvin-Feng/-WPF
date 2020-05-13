@@ -1,0 +1,22 @@
+﻿<Window x:Class="_6._3._10使用LINQ结果作为Binding的源.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_6._3._10使用LINQ结果作为Binding的源"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <ListView x:Name="listViewStu" Height="150" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="住院号" Width="60" DisplayMemberBinding="{Binding sZYH}"></GridViewColumn>
+                    <GridViewColumn Header="姓名" Width="100" DisplayMemberBinding="{Binding sXM}"></GridViewColumn>
+                    <GridViewColumn Header="床号" Width="80" DisplayMemberBinding="{Binding sCH}"></GridViewColumn>
+                    <GridViewColumn Header="部门名称" Width="80" DisplayMemberBinding="{Binding sBRBMMC}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Load" Height="25" Margin="5,0" Click="Button_Click"></Button>
+    </StackPanel>
+</Window>
