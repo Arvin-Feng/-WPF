@@ -116,6 +116,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.4.5查找由DataTemplate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.4.5查找由DataTemplate生成的控件2", "11.4.5查找由DataTemplate生成的控件2\11.4.5查找由DataTemplate生成的控件2.csproj", "{1EB09069-4844-4BC6-830E-492C3E3AA19D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.5.3DataTrigger", "11.5.3DataTrigger\11.5.3DataTrigger.csproj", "{07BA08CF-B916-4168-B3E6-1062A6687146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.5.4EvnetTrigger", "11.5.4EvnetTrigger\11.5.4EvnetTrigger.csproj", "{3E866A1B-30E8-4B1E-95BF-D819CEC19749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.1.1Line", "12.1.1Line\12.1.1Line.csproj", "{0DC4AECE-E8C1-49E3-934E-9CEE6BB4F2FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -338,6 +344,18 @@ Global
 		{1EB09069-4844-4BC6-830E-492C3E3AA19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB09069-4844-4BC6-830E-492C3E3AA19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB09069-4844-4BC6-830E-492C3E3AA19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07BA08CF-B916-4168-B3E6-1062A6687146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BA08CF-B916-4168-B3E6-1062A6687146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BA08CF-B916-4168-B3E6-1062A6687146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BA08CF-B916-4168-B3E6-1062A6687146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E866A1B-30E8-4B1E-95BF-D819CEC19749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E866A1B-30E8-4B1E-95BF-D819CEC19749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E866A1B-30E8-4B1E-95BF-D819CEC19749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E866A1B-30E8-4B1E-95BF-D819CEC19749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC4AECE-E8C1-49E3-934E-9CEE6BB4F2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC4AECE-E8C1-49E3-934E-9CEE6BB4F2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC4AECE-E8C1-49E3-934E-9CEE6BB4F2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC4AECE-E8C1-49E3-934E-9CEE6BB4F2FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

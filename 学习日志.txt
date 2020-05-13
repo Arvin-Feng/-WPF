@@ -228,6 +228,44 @@
 				当某一列使用TextBox作为CellTemplate，那么即使列中的TextBox被鼠标点击获得焦点，LIstView不会把此项作为自己的
 				SelectedItem。
 
+十七、Style
+	1. 作用
+	   设置控件在界面上的样式和行为，分别是Setter属性和Trigger属性。
+	2. Setter
+        <!--指定所有TextBlock控件都使用以下样式， 除了设置了Style=Null的 -->
+        <Style TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="24"></Setter>
+                <Setter Property="TextDecorations" Value="Underline"></Setter>
+                <Setter Property="FontStyle" Value="Italic"></Setter>
+            </Style.Setters>
+        </Style>
+	3. Trigger
+		1）单条件触发和多条件触发， demo： 11.5.2.1Style的Trigger
+	4. 单数据触发的DataTrigger
+		1) 11.5.3DataTrigger中重点关注的以下代码：设置自己为数据源！
+		   <DataTrigger Binding="{Binding RelativeSource={x:Static RelativeSource.Self},
+               Path=Text.Length, Converter={StaticResource cvtr}}" Value="false">
+                    <Setter Property="BorderBrush" Value="Red"></Setter>
+                    <Setter Property="BorderThickness" Value="1"></Setter>
+           </DataTrigger>
+
+	5. 多数据触发MultiDataTrigger (书11.5.2)
+	6. 由事件触发的EventTrigger - 动画触发器
+		是个特殊的触发器，它不是由属性值或者数据来触发的，触发后不是一组Setter，而是执行一段动画。
+
+十八、绘图与动画
+	WPF的基本图形包括以下几个，它们都是Shape类的派生类
+		● Line
+		● Rectangle
+		● Ellipse
+		● Polygon
+		● Polyline
+		● Path
+	WPF的常用绘图容器是Canvas和Grid
+
+	1. Line：(12.1.1Line)
+
 
 二十、MVVM
 		1. 结构：
