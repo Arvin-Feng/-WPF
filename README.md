@@ -87,3 +87,26 @@
 **10.使用LINQ查询到数据 （6.3.10使用LINQ结果作为Binding的源）**
   - LINQ的查询结果是一个IEnumberable<T>的对象，可以作为ItemsSouce来使用。
   - 使用LINQ从List、DataTabe、xml里获取IEnumberable<T>的对象。
+	
+## 七、Binding数据的校验与转换（数据校验：ValidationRulues	数据转换：Coverter）
+**1. 数据校验：ValidationRule**
+
+**2. 数据转换：IValueConverter**
+  - 当Source端Path所关联的数据与Target端目前属性的数据类型不一致时，可以添加数据转换器。
+  -  简单的数据转换系统可以自动完成，比如 字符串到数值，  但是复杂的就需要添加DataConverter了，就是现实IValueConverter接口。
+  
+## 八、多路绑定 MultiBinding
+  - UI上需要显示的信息有不止一个数据来决定，比如当多个条件都满足时。
+  - 凡是能使用Binding的场合，都能使用MultiBinding。
+  - MultiBinding有一个重要的Bindings属性， 用来把一组Binding组合起来， Bindings.add顺序是敏感的。
+  - MultiBinding的Converter显示的是IMultiValueConverter接口。
+  - 注意学习这段lamda表达式写法：
+  ```C#
+	if (!values.Cast<string>().Any(text=>string.IsNullOrEmpty(text)) 
+                && values[0].ToString() == values[1].ToString()
+                && values[2].ToString() == values[3].ToString())
+        {
+                return true;
+         }
+        return false;
+```
