@@ -140,3 +140,22 @@
    - 声明并注册路由事件。
    - 为路由事件添加CLR事件包装。
    - 创建可以激发路由事件的方法。
+   
+  ## 十三、命令
+  1. 特点： 一处定义、处处使用
+  2.  命令系统的基本元素 （演示以下流程的demo：9.1.3.1命令）
+    2.1 命令（Command）
+      - 实现ICommand接口，平时使用最多的是RoutedCommand类， 也可以自定义。
+    2.2 命令源（CommandSource）
+      - 命令的发送者， 实现了ICommandSource接口的类，很多界面元素都实现的此接口， 比如 Button、ListBoxItem等。
+    2.3 命令目标（CommandTarget）
+      - 命令发生给谁，命令目标必须是实现了IInputElement接口的类。
+    2.4 命令关联（Command Binding）
+      - 关联命令，执行命令之前判断命令是否可执行、命令执行之后处理一些后续工作。
+  3. WPF命令库
+    - 系统也预定义了一些命令， 如Open、Save等这些就不需要自己定义了， 拿来直接用，他们都来源于ApplicationCommands类的静态属性。
+  4. 命令参数 (9.2.2.1自定义Command)
+    4.1 CommandPrameter
+      - 很多命令都是一些类的静态属性（比如 ApplicationCommands），实例永远只有一个， 要想区分不同的命令源，需要使用参数。
+      - 命令源实现了ICommandSource接口， 而此接口有个属性就是CommandPrameter。
+  5. 控件的Command属性就一个，命令有很多， 使用Binding可以改变Command对应的不同命令。
